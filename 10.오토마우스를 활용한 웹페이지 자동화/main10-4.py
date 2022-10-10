@@ -2,6 +2,10 @@
 import pyautogui
 import time
 import pyperclip
+import os
+
+#경로를 .py파일의 실행경로로 이동, 현재 경로로 이동
+os.chdir( os.path.dirname( os.path.abspath(__file__) ) )
 
 weatherList = [ "서울 날씨", "대전 날씨", "청주 날씨", "부산 날씨", "제주도 날씨" ]
 
